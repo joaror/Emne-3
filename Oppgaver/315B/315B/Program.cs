@@ -4,16 +4,12 @@
     {
         static void Main(string[] args)
         {
-            string[][] gameWords = [
-                [ "steinsaks", "sakspapir", "papirstein" ],
-                [ "stein", "saks", "papir" ],
-                [ "y", "n" ]
-            ];
+            List<string> gameWords = ["stein", "saks", "papir", "steinsaks", "sakspapir", "papirstein"];
 
             string ComputerPicks()
             {
                 var randomIndex = new Random().Next(0, 3);
-                return gameWords[1][randomIndex];
+                return gameWords[randomIndex];
             }
 
             Boolean KeepGaming()
@@ -43,7 +39,7 @@
                 {
                     Console.Write("Stein, Saks eller Papir : ");
                     strInput = Console.ReadLine() ?? "";
-                    if (gameWords[1].Contains(strInput)) notString = false;
+                    if (gameWords.Contains(strInput)) notString = false;
                 }
                 while (notString);
 
@@ -59,7 +55,7 @@
                 {
                     Console.WriteLine("Uavgjort\n");
                 }
-                else if (gameWords[0].Contains(humanChoice + computerChoice))
+                else if (gameWords.Contains(humanChoice + computerChoice))
                 {
                     Console.WriteLine("Du vant\n");
                 }
@@ -67,7 +63,6 @@
                 {
                     Console.WriteLine("Du tapte\n");
                 }
-
             }
             while (KeepGaming());
         }
