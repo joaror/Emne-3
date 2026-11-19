@@ -9,10 +9,8 @@ namespace _315C
             Console.Write("Hvilket ord vil du snu? ");
             var theWord = Console.ReadLine() ?? "";
 
-            //WordTurn(theWord);
+            WordTurn(theWord);
             WordTurnStringBuilder(theWord);
-
-
 
             static void WordTurn(string theParameter)
             {
@@ -40,7 +38,3 @@ namespace _315C
         }
     }
 }
-
-
-
-//Lag en funksjon som tar en tekst som parameter og som returnerer teksten snudd i motsatt rekkefølge. For eksempel skal 'Terje' bli til 'ejreT.
