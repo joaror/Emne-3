@@ -20,7 +20,7 @@
 
         private static SentenceStats GetStatsFromSentence(string sentence)
         {
-            SentenceStats stats = new SentenceStats();
+            SentenceStats stats = new();
             var vowels = "aeiouyæøå";
             string[] wordList = sentence.Split(" ");
 
