@@ -2,4 +2,5 @@
   <Project Path="315A/315A/315A.csproj" />
   <Project Path="315B/315B/315B.csproj" />
   <Project Path="315C/315C.csproj" Id="3cf2ed41-92ab-4632-80b1-4bb4138d4b72" />
+  <Project Path="315D/315D.csproj" Id="4a3de736-ea5e-4b83-97c4-543e77bd4aa2" />
 </Solution>
